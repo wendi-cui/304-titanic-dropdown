@@ -9,7 +9,7 @@ import plotly.graph_objs as go
 
 
 ###### Define your variables #####
-tabtitle = 'Titanic!'
+tabtitle = 'A Sad Story'
 color1='#92A5E8'
 color2='#8E44AD'
 color3='#FFC300'
@@ -31,7 +31,7 @@ app.title=tabtitle
 
 ####### Layout of the app ########
 app.layout = html.Div([
-    html.H3('Choose a continuous variable for summary statistics:'),
+    html.H3('Statistics for a sad story:'),
     dcc.Dropdown(
         id='dropdown',
         options=[{'label': i, 'value': i} for i in variables_list],
